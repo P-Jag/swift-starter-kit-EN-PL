@@ -25,9 +25,11 @@ Remember also that Swift always want to know what type of data are you using, so
 
 Swift wie jakiego typu danych używasz kiedy przypiszesz go do zmiennej jak w przypadku: var isTrue = false // Swift już wie, że używasz Bool'a
 
-*Może Ci się wydawać, że Float i Double to to samo. Nie do końca. Musisz pamiętać, że Float ma mniej miejsca na przechowywanie liczb i ucina je tak aby dać jak nabliższy prawdzie wynki. Dla sprawdzenia: W Swift Playgorund stwórz zmienne z type Double i Float i przypisz do nich dużą liczbą jak chociażby 1234567,890987 i porównaj wynik)
+*Może Ci się wydawać, że Float i Double to to samo. Nie do końca. Musisz pamiętać, że Float ma mniej miejsca na przechowywanie liczb i ucina je tak, aby dać jak najbliższy prawdzie wynki.
 
-Pamiętaj również, że Swift zawsze chce wiedzieć jakiego typu danych chcesz użyć. Jeśli wiesz co zostanie przypisane do danej zmiennej możesz użyć adnotacji typu poprzez dodanie do nazwy : oraz typu jak w przykładach poniżej:
+Dla sprawdzenia: W Swift Playgorund stwórz zmienne z typem Double oraz Float i przypisz do nich dużą liczbę np: 1234567,890987
+
+Pamiętaj również, że Swift zawsze chce wiedzieć jakiego typu danych chcesz użyć. Jeśli wiesz, co zostanie przypisane do danej zmiennej możesz użyć adnotacji typu poprzez dodanie do nazwy : oraz typu jak w przykładach poniżej:
 
 ```swift
 var number: Int
