@@ -1,3 +1,5 @@
+## Variables and Constants
+
 ```swift
 var animal =  "Dog"  // variable declaration
 animal = "Cat" // changing variable value
