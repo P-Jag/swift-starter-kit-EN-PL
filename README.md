@@ -6,6 +6,8 @@
 
 ## Basics
 
+* [Variables and Constants](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Variables-and-Constans.md)
+
 ## Advanced
 
 ## Testing
