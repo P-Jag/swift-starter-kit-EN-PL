@@ -21,3 +21,5 @@
 ## Interviews
 
 ## Some cool stuff
+
+* [Swift Design Patterns](https://refactoring.guru/design-patterns/swift)
