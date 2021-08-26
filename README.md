@@ -14,6 +14,8 @@
 
 ## Advanced
 
+* [RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md)
+
 ## SwiftUI
 
 ## Testing
