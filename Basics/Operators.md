@@ -33,25 +33,63 @@ name == "John Doe" // return true
 name == "John DOE" // return false 
 ```
 
-### Remainder Operator
+### Remainder Operator %
+
+**EN:**
+Reminder operator called Modulo counts how many times a fits in b and return left over (reminder). Example use: check is even or odd. 
+
+**PL:**
+
+Tzw. Modulo oblicza ile razy warość a miejści się w b, po czym zwraca to co pozostało. Przykładowo można łatwo sprawdzić parzystość/nieparzystość liczy etc. 
 
 ```swift
+
+11 % 5 // return 1 
+
+Example above return 1 because 5 can fit in 11, two times (5x2 = 10).
 
 ```
 
-### Unary Minus Operator
+### Unary Minus Operator -
+
+**EN:**
+
+Unary Minus operator change value of variable/constant. It have to be written directly before value (without any whitespaces)
+
+**PL:**
+
+Operator - zmienia wartość zmiennej na przeciwną, jak w przykładzie poniżej. Jak w matematyce - i - daje plus więc podwóje jego użycie przywraca zmienną do pozycji wyjściowej. W zapisie używamy go bezpośrednio przed wartością na której operujemy (bez spacji etc). 
 
 ```swift
+
+let five = 5
+let minusFive = -five // -5 
+let plusFive = -minusFive // 5
 
 ```
 
-### Unary Plus Operator
+### Unary Plus Operator +
+
+**EN:**
+
+Actually, it's do nothig. You can use it just to have clean an consistent code when you are using Unary Minus Operator
+
+**PL:**
+
+Nie robi nic. Wartość, do której jest przypisany się nie zmienia. Dobrze jest go używać w przypadku kiedy korzystamy z Unary Minus, po to by zachować jednolitość, przejrzystość i czystość kodu. 
 
 ```swift
+
+let minusTen = -10
+let nothingChangesStillMinusTen = +minusTen
 
 ```
 
 ### Compound Assignment Operators
+
+**EN:**
+
+**PL:**
 
 ```swift
 
@@ -59,11 +97,19 @@ name == "John DOE" // return false
 
 ### Comparison Operators
 
+**EN:**
+
+**PL:**
+
 ```swift
 
 ```
 
 ### Ternary Conditional Operator
+
+**EN:**
+
+**PL:**
 
 ```swift
 
@@ -71,17 +117,29 @@ name == "John DOE" // return false
 
 ### Nil-Coalescing Operator
 
+**EN:**
+
+**PL:**
+
 ```swift
 
 ```
 
 ### Range Operators
 
+**EN:**
+
+**PL:**
+
 ```swift
 
 ```
 
 ### Logical Operators
+
+**EN:**
+
+**PL:**
 
 ```swift
 
