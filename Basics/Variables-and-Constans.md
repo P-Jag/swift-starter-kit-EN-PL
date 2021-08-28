@@ -1,4 +1,4 @@
-## Variables and Constants
+# Variables and Constants
 
 ```swift
 var animal =  "Dog"  // variable declaration
