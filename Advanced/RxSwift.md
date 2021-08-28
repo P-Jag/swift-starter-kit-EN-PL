@@ -1,19 +1,48 @@
-## RxSwift
+# RxSwift
 
-### What's the deal with RxSwift?
+* ## Observables
 
-### Observables
+**EN:**
 
-### Subjects
+Basic concept of Observables/Sequence is that every time when we emit event (tap, scorll etc) the value is changing and subscribing to observables let us control it and get the changed value and to something with it.
 
-### Filtering Operators
+**PL:**
 
-### Transforming Operators
+Najprościej rzecz ujmująć Observable pozwala nam kontrolować zmiany wywołane przez jakiś event np. kliknięcie czy scrollowanie ekranu. Dzięki subskrybcji możemy wyłapać zmianę danej wartości.
 
-### Combining Operators
+Observable
 
-### RxCocoa
+```swift 
 
-### Error Handling
 
-### MVVM in RxSwift
+```
+Sequence
+
+```swift 
+
+```
+
+Disposing and Terminating
+
+```swift 
+
+```
+
+
+* ## Subjects
+
+**EN:**
+
+**PL:**
+
+* ## Filtering Operators
+
+* ## Transforming Operators
+
+* ## Combining Operators
+
+* ## RxCocoa
+
+* ## Error Handling
+
+* ## MVVM in RxSwift
