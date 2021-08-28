@@ -15,7 +15,6 @@
 ## Advanced
 
 * [RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md)
-  * [What's the deal with RxSwift?](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#whats-the-deal-with-rxswift)
   * [Observables](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#observables)
   * [Subjects](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#subjects)
   * [Filtering Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#filtering-operators)
