@@ -1,6 +1,6 @@
-## Operators
+# Operators
 
-### Arithmetic Operators
+* ## Arithmetic Operators
 ```swift
 
 var a = 10 
@@ -33,7 +33,7 @@ name == "John Doe" // return true
 name == "John DOE" // return false 
 ```
 
-### Remainder Operator %
+* ## Remainder Operator %
 
 **EN:**
 Reminder operator called Modulo counts how many times a fits in b and return left over (reminder). Example use: check is even or odd. 
@@ -50,7 +50,7 @@ Example above return 1 because 5 can fit in 11, two times (5x2 = 10).
 
 ```
 
-### Unary Minus Operator -
+* ## Unary Minus Operator -
 
 **EN:**
 
@@ -68,7 +68,7 @@ let plusFive = -minusFive // 5
 
 ```
 
-### Unary Plus Operator +
+* ## Unary Plus Operator +
 
 **EN:**
 
@@ -85,7 +85,7 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-### Compound Assignment Operators
+* ## Compound Assignment Operators
 
 **EN:**
 
@@ -95,7 +95,7 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-### Comparison Operators
+* ## Comparison Operators
 
 **EN:**
 
@@ -105,7 +105,7 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-### Ternary Conditional Operator
+* ## Ternary Conditional Operator
 
 **EN:**
 
@@ -115,7 +115,7 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-### Nil-Coalescing Operator
+* ## Nil-Coalescing Operator
 
 **EN:**
 
@@ -125,7 +125,7 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-### Range Operators
+* ## Range Operators
 
 **EN:**
 
@@ -135,7 +135,7 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-### Logical Operators
+* ## Logical Operators
 
 **EN:**
 
