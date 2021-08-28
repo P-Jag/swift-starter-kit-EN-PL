@@ -16,12 +16,18 @@
 
 * [RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md)
   * [What's the deal with RxSwift?](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#whats-the-deal-with-rxswift)
+  * [Observables](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#observables)
+  * [Subjects](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#subjects)
+  * [Filtering Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#filtering-operators)
+  * [Transforming Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#transforming-operators)
+  * [Combinig Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#combining-operators)
+  * [RxCocoa](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#rxcocoa)
+  * [Error Handling](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#error-handling)
+  * [MVVM with RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#mvvm-in-rxswift)
 
 ## SwiftUI
 
 ## Testing
-
-## Interviews
 
 ## Some cool stuff
 
