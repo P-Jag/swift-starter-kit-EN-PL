@@ -15,6 +15,7 @@
 ## Advanced
 
 * [RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md)
+  * [What's the deal with RxSwift?](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#whats-the-deal-with-rxswift)
 
 ## SwiftUI
 
