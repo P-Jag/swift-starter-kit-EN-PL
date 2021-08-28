@@ -4,25 +4,24 @@
 
 **EN:**
 
-Basic concept of Observables/Sequence is that every time when we emit event (tap, scorll etc) the value is changing and subscribing to observables let us control it and get the changed value and to something with it.
+Basic concept of **Observables/Sequence** is that every time when we emit event (tap, scorll etc) the value is changing and subscribing to observables let us control it and get the changed value and to something with it.
 
 **PL:**
 
-Najprościej rzecz ujmująć Observable pozwala nam kontrolować zmiany wywołane przez jakiś event np. kliknięcie czy scrollowanie ekranu. Dzięki subskrybcji możemy wyłapać zmianę danej wartości.
+Najprościej rzecz ujmująć **Observable/Sequence** pozwala nam kontrolować zmiany wywołane przez jakiś event np. kliknięcie czy scrollowanie ekranu. Dzięki ich subskrybcji możemy wyłapać zmianę danej wartości.
 
-Observable
-
-```swift 
-
-
-```
-Sequence
+**Observable**
 
 ```swift 
 
 ```
+**Sequence**
 
-Disposing and Terminating
+```swift 
+
+```
+
+**Disposing and Terminating**
 
 ```swift 
 
