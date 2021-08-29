@@ -109,9 +109,34 @@ let nothingChangesStillMinusTen = +minusTen
 
 **EN:**
 
+Ternary Conditional Operator is a shorthand of if statement which answers true/false. 
+
 **PL:**
 
+Ternary Conditional Operator to skrócona forma prostego if'a, wykonującego instrukcję na bazie odpowiedzi - true/false. 
+
 ```swift
+
+if satetment 
+
+if questionToAsk {
+  do this if true
+} else {
+  do this if false
+}
+
+Ternary operator
+
+questionToAsk ? do this if true : do this if false 
+
+
+Example use 
+
+var height = 150
+var hasBottomBar = true
+var callingCardHeight = height + (hasBottomBar ? 50 : 10)
+
+hasBottomBar is set for true, so callingCardHeight will be 200 (150 from height variable and 50 from ternary operator)
 
 ```
 
