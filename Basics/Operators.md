@@ -36,6 +36,7 @@ name == "John DOE" // return false
 * ## Remainder Operator %
 
 **EN:**
+
 Reminder operator called Modulo counts how many times a fits in b and return left over (reminder). Example use: check is even or odd. 
 
 **PL:**
