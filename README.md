@@ -9,6 +9,7 @@
 * [Variables and Constants](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Variables-and-Constans.md)
 * [Data Types](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Data-types.md)
 * [Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Operators.md) 
+* [String interpolation](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/String_interpolation.md)
 * [Arrays](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Arrays.md)
 * [Dictionaries](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Dictionaries.md)
 
