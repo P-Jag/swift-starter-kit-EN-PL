@@ -85,13 +85,23 @@ let nothingChangesStillMinusTen = +minusTen
 
 ```
 
-* ## Compound Assignment Operators
+* ## Compound Assignment Operator +=
 
 **EN:**
 
+Simply - take current value and add something to it. It's a shortcut for a = a + b
+
 **PL:**
 
+Najprościej rzecz ujmując, bierze obecną zmienną (jej wartość) i dodaje do niej kolejną. Jest to skrót dla działań takich jak a = a + b
+
 ```swift
+
+a = a + b // 'normal' way
+a += b // Compound Assignment Operator
+
+var a = 10
+a += 15 // a = 10 + 15
 
 ```
 
@@ -99,21 +109,48 @@ let nothingChangesStillMinusTen = +minusTen
 
 **EN:**
 
+Basisc comparsion operators which checks is if our values are equal, not equal, less, greater, less then or equal, geater then or equal. Comparsion operators are often use in conditinal statements like **if**. 
+
 **PL:**
+
+Podstawowe operatory, których zadaniem jest porównanie wybranych wartości. Czy dwie waerości są równe, nierówne sobie, czy jedna jest mniejsz, większa, mniejsza lub równa, większa lub równa. Używa się ich zazwyczaj w instrukcjach warunkowych takich jak if. 
 
 ```swift
 
+4 == 4  // true because 4 is equal to 4 // prawda bo 4 jest równe 4
+3 != 1   // true because 3 isn't equal to 1 // prawda bo 3 nie jest równe 1
+2 > 1    // true because 5 is greater than 2 // prawda bo 5 jest większe niż 2
+1 < 10   // true because 1 is less than 2 // prawda bo 1 jest mniejsze od 10
+1 >= 1   // true because 1 is greater than or equal to 1 // prawda bo 1 jest równe 1
+17 <= 5   // false because 17 isn't less than or equal to 1 // fałsz bo 17 nie jest mniejsze od 5
+
 ```
 
-* ## Ternary Conditional Operator
+```swift
+Comparsion operators in if statement:
+
+var age = 19 
+
+if age >= 18 { // in US version 21 ;)
+  print("Let's have a drink")
+} else {
+  print("You are too young to drink")
+}
+
+// Prints "Let's have a drink" because our age (19) is greater than required 18
+```
+
+* ## Ternary Conditional Operator ? :
 
 **EN:**
 
 Ternary Conditional Operator is a shorthand of if statement which answers true/false. 
+Important: Avoid to use nested ternary operators 
 
 **PL:**
 
 Ternary Conditional Operator to skrócona forma prostego if'a, wykonującego instrukcję na bazie odpowiedzi - true/false. 
+Ważne: Staraj się unikać zagnieżdżania TCO jeden w drugim itp. 
 
 ```swift
 
@@ -140,13 +177,27 @@ hasBottomBar is set for true, so callingCardHeight will be 200 (150 from height 
 
 ```
 
-* ## Nil-Coalescing Operator
+* ## Nil-Coalescing Operator ??
 
 **EN:**
 
+Nil-Coalescing Operator unwraps optional variable (ex. someValue, with ? mark) and return default one while someValue is **nil**
+
 **PL:**
 
+Nil-Coalescing Operator 'rozpakowuje' zmienną zadeklarowaną jako opcjonalna (przed dodanie ?) i zrwaca domyślną wartość kiedy nasz 'opcjonalna' zawiera **nil**
+
 ```swift
+
+var defaultColor = "white"
+var userSelectedColor: String? // now this variable is equal nil because we do not choose color
+
+var selectedColorToUse = userSelectedColor ?? defaultColor // output will be "white"
+
+if user pick color and our variable is not empty, nil-coalesing operator will return it like in example below:
+
+userSelectedColor = "black"
+var selectedColorToUse = userSelectedColor ?? defaultColor // output will be "black"
 
 ```
 
