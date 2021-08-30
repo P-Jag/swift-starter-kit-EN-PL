@@ -29,6 +29,10 @@
 
 ## Testing
 
+## Other
+
+* [Xcode tips and tricks](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Xcode.md)
+
 ## Some cool stuff
 
 * [Swift Design Patterns](https://refactoring.guru/design-patterns/swift)
