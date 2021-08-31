@@ -21,6 +21,7 @@
 * [Struct](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Struct.md)
 * [Class](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Class.md)
 * [Closures](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Closures.md)
+* [Tuples](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Tuples.md)
 * [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
 
 ## Keywords 
