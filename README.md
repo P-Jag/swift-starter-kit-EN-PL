@@ -38,8 +38,10 @@
 
 ## Other
 
-* [Xcode tips and tricks](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Xcode.md)
+* [Lifecycle of iOS App](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Lifecycle-of-iOS-App.md)
+* [Lifecycle of UIViewController](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Lifecycle-of-UIViewController.md)
 
 ## Some cool stuff
 
+* [Xcode tips and tricks](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Xcode.md)
 * [Swift Design Patterns](https://refactoring.guru/design-patterns/swift)
