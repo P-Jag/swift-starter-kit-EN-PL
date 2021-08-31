@@ -13,6 +13,13 @@
 * [Arrays](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Arrays.md)
 * [Dictionaries](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Dictionaries.md)
 
+## Keywords 
+
+* [Static](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Static.md)
+* [Lazy](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Lazy.md)
+* [Final](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Final.md)
+* [Guard](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Guard.md)
+
 ## Advanced
 
 * [RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md)
