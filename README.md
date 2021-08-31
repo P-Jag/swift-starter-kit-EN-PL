@@ -12,6 +12,16 @@
 * [String interpolation](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/String_interpolation.md)
 * [Arrays](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Arrays.md)
 * [Dictionaries](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Dictionaries.md)
+* [Conditional Statements](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Conditional-statements.md)
+* [Loops](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Loops.md)
+* [Switch](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Switch.md)
+* [Functions](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Functions.md)
+* [Optionals](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Optionals.md)
+* [Enums](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Enums.md)
+* [Struct](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Struct.md)
+* [Class](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Class.md)
+* [Closures](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Closures.md)
+* [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
 
 ## Keywords 
 
