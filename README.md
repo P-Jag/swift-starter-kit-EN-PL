@@ -21,15 +21,18 @@
 * [Struct](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Struct.md)
 * [Class](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Class.md)
 * [Closures](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Closures.md)
+* [Protocols](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Protocols.md)
+* [Typealias](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Typealias.md)
 * [Tuples](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Tuples.md)
 * [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
 
-## Keywords 
+## Keywords and core concepts
 
 * [Static](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Static.md)
 * [Lazy](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Lazy.md)
 * [Final](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Final.md)
 * [Guard](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Guard.md)
+
 
 ## Advanced
 
