@@ -28,14 +28,19 @@ If you have function which can be called anywhere (let's take this one written b
 
 Kiedy masz funkcję, którą możesz wywołać w każdym miejscu w kodzie może dojść do sytuacji, w której nie będziesz wiedział, co przesłać dalej / jaki tekst podać? W tym przypadku na ratunek przychodzi typealias. Po prostu zmień nazwę typu tak, żeby lepiej opisywał czego w tym wypadku oczekujesz.
 
+Before:
+
 ```swift
-before
+
 
 func showSomeAlert(with messsage: String, in view: UIView) {
   some code here // not important right now
 }
+```
 
-after 
+After:
+
+```swift
 
 typealias EmptyListMessage = String
 
