@@ -32,6 +32,7 @@
 * [Lazy](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Lazy.md)
 * [Final](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Final.md)
 * [Guard](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Guard.md)
+* [ARC](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/ARC.md)
 
 
 ## Advanced
