@@ -185,3 +185,23 @@ override func viewDidLoad() {
 ```
 
 And that's all folks! (simple as that)
+
+PS
+
+It will be even better if you move all customization code from ```viewDidLoad``` to other func and just call it. 
+
+```swift
+override func viewDidLoad() {
+        super.viewDidLoad()
+        configureUI()
+    }
+
+func configureUI() {
+        view.addSubview(iconImage)
+        iconImage.centerX(inView: view) 
+        iconImage.centerY(inView: view) 
+        iconImage.setDimensions(height: 120, width: 120) 
+}
+
+
+```
