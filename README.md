@@ -48,6 +48,7 @@
   * [RxCocoa](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#rxcocoa)
   * [Error Handling](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#error-handling)
   * [MVVM with RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#mvvm-in-rxswift)
+* [VIPER](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md)
 
 ## SwiftUI
 
