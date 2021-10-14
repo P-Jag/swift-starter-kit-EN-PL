@@ -71,6 +71,8 @@ Extension:
 ```swift
 
 extension UIView {
+
+ // achor func helps us to set constrains
     func anchor(top: NSLayoutYAxisAnchor? = nil,
                 left: NSLayoutXAxisAnchor? = nil,
                 bottom: NSLayoutYAxisAnchor? = nil,
@@ -82,7 +84,7 @@ extension UIView {
                 width: CGFloat? = nil,
                 height: CGFloat? = nil) {
         
-        translatesAutoresizingMaskIntoConstraints = false
+        translatesAutoresizingMaskIntoConstraints = false // here you have 'showing up' component line so every time when we cast achor func than this line takes care about displaying our component
         
         if let top = top {
             topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
@@ -109,6 +111,8 @@ extension UIView {
         }
     }
     
+    // funcs below are prepared to center component and sets the height and width of it 
+
     func centerX(inView view: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -143,3 +147,41 @@ extension UIView {
 }
 
 ```
+
+**EN:**
+
+After creating this extension we can easily refactor our code from standard to:
+(It helps us to write less code when we have a multiple components)
+
+**PL:**
+
+Po stworzeniu powyższego rozszerzenia możemy łatwo zrefaktorować nasz kod (ze standardowego podejścia) na:
+
+```swift
+
+// Standard way
+
+override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.addSubview(iconImage)
+        iconImage.translatesAutoresizingMaskIntoConstraints = false
+        iconImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true // center according to Y anchor
+        iconImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true // center according to X anchor
+        iconImage.heightAnchor.constraint(equalToConstant: 120).isActive = true // set the height of component
+        iconImage.widthAnchor.constraint(equalToConstant: 120).isActive = true // set the width of component
+    }
+
+// Extension way
+  override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.addSubview(iconImage)
+        iconImage.centerX(inView: view) // center to x
+        iconImage.centerY(inView: view) // center to y
+        iconImage.setDimensions(height: 120, width: 120) // set width and height
+    }
+
+```
+
+And that's all folks! (simple as that)
