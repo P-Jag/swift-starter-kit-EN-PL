@@ -25,6 +25,7 @@
 * [Typealias](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Typealias.md)
 * [Tuples](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Tuples.md)
 * [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
+* [UI Components - programmatically](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/UIComponents.md)
 
 ## Keywords and core concepts
 
