@@ -50,10 +50,17 @@
   * [Error Handling](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#error-handling)
   * [MVVM with RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#mvvm-in-rxswift)
 * [VIPER](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md)
+  * [View](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md#v---view)
+  * [Interactor](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md#i---interactor)
+  * [Presenter](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md#p---presenter)
+  * [Entity](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md#e---entity)
+  * [Router](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/VIPER.md#r---router)
 
 ## SwiftUI
 
 ## Testing
+
+* [Unit Testing](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Unit-tests.md)
 
 ## Other
 
