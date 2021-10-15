@@ -12,3 +12,7 @@
 ## E - Entitny
 
 ## R - Router
+
+### Useful links
+* [VIPER in iOS App](https://medium.com/cr8resume/viper-architecture-for-ios-project-with-simple-demo-example-7a07321dbd29)
+* [VIPER explanation](https://www.youtube.com/watch?v=hFLdbWEE3_Y)
