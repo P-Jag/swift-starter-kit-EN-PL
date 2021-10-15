@@ -62,6 +62,8 @@
 
 * [Unit Testing](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Unit-tests.md)
 
+## Code snippets
+
 ## Other
 
 * [Lifecycle of iOS App](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Lifecycle-of-iOS-App.md)
