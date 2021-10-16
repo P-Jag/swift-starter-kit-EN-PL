@@ -27,6 +27,32 @@ Pierwszym elementem VIPERa jest View. Nazewnictwo może być w tym wypadku lekko
 - musi stosować się do specyficznego protokołu
 - ma referencję do Presentera / odbiera dane
 
+Example:
+
+```swift 
+import Foundation
+import UIKit
+
+protocol AnyView {
+    var presenter: AnyPresenter? { get set }
+    
+    func update(with users: [User])
+    func update(with error: String)
+}
+
+class UserViewController: UIViewController, AnyView {
+    func update(with users: [User]) {
+        
+    }
+    
+    func update(with error: String) {
+        
+    }
+    
+    var presenter: AnyPresenter?
+}
+```
+
 ## I - Interactor
 
 **EN:**
@@ -45,6 +71,26 @@ Interaktor jest swego rodzaju mózgiem naszej aplikacji. Tutaj procesujemy cał�
 - musi stosować się do specyficznego protokołu
 - ma referencje do Presentera (tylkoe) / Przesyła przeprocesowane dane 
 
+Example:
+
+```swift
+protocol AnyInteractor {
+    var presenter: AnyPresenter? { get set }
+    
+    func getUsers()
+    // co completion handler. We want to infrom presenter while everything is ready
+}
+
+class UserInteractor: AnyInteractor {
+    
+    var presenter: AnyPresenter?
+    
+    func getUsers() {
+    
+    }
+}
+```
+
 ## P - Presenter
 
 **EN:**
@@ -61,6 +107,31 @@ Najprościej - Presenter decyduje, jakie dane (otrzymane z interactora) wyświet
 - musi stosować się do specyficznego protokołu
 - ma referencje do Interactora, Routera i View
 
+Example:
+
+```swift
+protocol AnyPresenter {
+    var router: AnyRouter? { get set }
+    var interactor: AnyInteractor? { get set }
+    var view: AnyView? { get set }
+    
+    //set functions to react on changes in interactor
+    func interactorDidFetchUsers(with result: Result<[User],Error>)
+}
+
+class UserPresenter: AnyPresenter {
+    
+    var interactor: AnyInteractor?
+    
+    var view: AnyView?
+    
+    var router: AnyRouter?
+    
+    func interactorDidFetchUsers(with result: Result<[User], Error>) {
+    }
+}
+```
+
 ## E - Entitny
 
 **EN:**
@@ -70,6 +141,16 @@ Entity is just a model - no more, no less
 **PL:**
 
 Entity to po prostu nasz model danych.
+
+Example:
+
+```swift
+struct User {
+    let name: String
+    //and so on...
+}
+
+```
 
 ## R - Router
 
@@ -84,6 +165,27 @@ Router is our entry point for modules (module is for ex. a single tab)
 Router jest naszym punktem wejściowym dla modułów (modułem może być np. pojedyńczy tab).
 - jest obiektem
 - punkt wejściowy dla modułów
+
+Exaple:
+
+```swift 
+
+protocol AnyRouter {
+    static func start() -> AnyRouter
+}
+
+class UserRouter: AnyRouter {
+    static func start() -> AnyRouter {
+        let router = UserRouter()
+        
+        //Assign VIP (after creating basic router we need to assign other parts to it - View, Interactor and Presenter)
+        return router
+    }
+}
+
+```
+
+### See the [Full Example](https://github.com/P-Jag/ViperPractice/tree/main/ViperPractice)
 
 ### Useful links
 * [VIPER in iOS App](https://medium.com/cr8resume/viper-architecture-for-ios-project-with-simple-demo-example-7a07321dbd29)
