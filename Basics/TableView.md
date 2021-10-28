@@ -4,7 +4,7 @@
 
 **EN:**
 
-.reloadData() is necessary for refreshing a tableView. If we are setting up an empty array of objects or tableView will not show up data even if we pass values to dictionary. 
+.reloadData() is necessary for refreshing a tableView. If we are setting up an empty array of objects or tableView will not show up data even if we pass values to it. 
 At the beginning our view is empty so tableView is not renedring cells. Thinks that count is equal 0. Acctually is equal to 0 because fetching takes some time to complete. 
 
 **PL:**
