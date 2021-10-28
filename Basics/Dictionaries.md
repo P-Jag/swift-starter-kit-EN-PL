@@ -2,7 +2,7 @@
 
 **EN:**
 
-To access values from dictionaries use key-value pairs (that's how dictionaries store values)
+To access values from dictionaries use key-value pairs (that's how dictionaries store values). Dictionaries are unordered.
 
 **PL:**
 
