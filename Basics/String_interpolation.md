@@ -21,3 +21,22 @@ The output will be:
 "Die Hard and it's main character John McClane was introduced in 1988"
 
 ```
+
+**EN:**
+
+You can manipulate string with tripple " (""") to make multiple lines in current string
+
+**PL:**
+
+Możesz użyć potrójnego " ("""), żeby móc tworzyć kilka lini w ramach jednego stringa. 
+
+```swift
+
+let quotation = """
+This is a first line
+and this is 2nd one
+yo can also add
+3rd, 4th etc. it's totally up to You
+"""
+
+```
