@@ -26,6 +26,7 @@
 * [Tuples](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Tuples.md)
 * [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
 * [UI Components - programmatically](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/UIComponents.md)
+* [.reloadData() in TableView](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/tableView.md)
 
 ## Keywords and core concepts
 
