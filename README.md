@@ -39,7 +39,7 @@
 * [Persistence](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Persistence.md)
 * [AppDelegate vs SceneDelegate](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/AppDelegate-vs-SceneDelegate.md)
 * [Dependency Injection](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Dependency-Injection.md)
-* [didSet](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/didSet.md)
+* [didSet and willSet - property observers](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/didSet.md)
 
 
 ## Advanced
