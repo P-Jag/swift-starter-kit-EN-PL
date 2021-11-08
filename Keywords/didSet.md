@@ -15,7 +15,11 @@ Dla łatwiejszego zrozumienia didSet przyjrzyj się poniższym przykładom.
 
 ```swift 
 
-example code
+var score = 0 {
+  didSet {
+     label.text = "The score is: \(score)" // everytime when score get changed then label text will be set to new one.
+  }
+}
 
 ```
 
@@ -35,7 +39,7 @@ Warto wspomnieć, że drugim blokiem tego typu jest willSet, który uruchamia si
 
 ```swift
 
-private let someNumber = "1" {
+private var someNumber = "1" {
   willSet {
     code to execute 
   }
