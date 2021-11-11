@@ -4,31 +4,82 @@
 
 **PL:** Mała ściągawka dla osób, które chcą nauczyć się Swift'a
 
-## Basics
+## Swift Theory
 
+### Basics
 * [Variables and Constants](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Variables-and-Constans.md)
 * [Data Types](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Data-types.md)
-* [Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Operators.md) 
+
+### Operators 
+* [Basic Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Operators.md)
+* [Advanced Operators]() 
+
+### String and Characters 
 * [String interpolation](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/String_interpolation.md)
-* [Collection Types](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md)
-  * [Array](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#arrays)
-  * [Dictionary](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#dictionaries)
-  * [Set](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#sets)
+
+### Collection Types
+* [Array](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#arrays)
+* [Dictionary](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#dictionaries)
+* [Set](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#sets)
+
+### Control Flow
 * [Conditional Statements](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Conditional-statements.md)
 * [Loops](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Loops.md)
 * [Switch](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Switch.md)
+
+### Functions
 * [Functions](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Functions.md)
-* [Optionals](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Optionals.md)
+
+### Closures
+* [Closures](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Closures.md)
+
+### Enumeration
 * [Enums](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Enums.md)
+
+### Struct vs Class
 * [Struct](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Struct.md)
 * [Class](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Class.md)
-* [Closures](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Closures.md)
+
+### Properties
+
+### Methods
+
+### Subscript
+
+### Inheritance
+
+### Initialization
+
+### Deinitialization
+
+### Optional Chaining
+* [Optionals](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Optionals.md)
+
+### Error Handling
+
+### Concurrency
+* [Concurrency](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Concurrency-and-multithreading.md)
+
+### Type Casting 
+
+### Nested Types
+
+### Extensions
+
+### Protocols
 * [Protocols](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Protocols.md)
-* [Typealias](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Typealias.md)
-* [Tuples](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Tuples.md)
+
+### Generics
+
+### Opaque Types
+
+### ARC - Automatic Reference Counting
+* [ARC](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/ARC.md)
+
+### Memory Safety
+
+### Access Control
 * [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
-* [UI Components - programmatically](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/UIComponents.md)
-* [.reloadData() in TableView](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/tableView.md)
 
 ## Keywords and core concepts
 
@@ -36,13 +87,15 @@
 * [Lazy](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Lazy.md)
 * [Final](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Final.md)
 * [Guard](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Guard.md)
-* [ARC and Memory Management](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/ARC.md)
-* [Concurrency and Multitherading](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Concurrency-and-multithreading.md)
 * [Persistence](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Persistence.md)
 * [AppDelegate vs SceneDelegate](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/AppDelegate-vs-SceneDelegate.md)
 * [Dependency Injection](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Dependency-Injection.md)
 * [didSet and willSet - property observers](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/didSet.md)
 
+## How it's done?
+
+* [UI Components - programmatically](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/UIComponents.md)
+* [.reloadData() in TableView](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/tableView.md)
 
 ## Advanced
 
@@ -76,7 +129,7 @@
 * [Lifecycle of iOS App](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Lifecycle-of-iOS-App.md)
 * [Lifecycle of UIViewController](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Lifecycle-of-UIViewController.md)
 
-## Some cool stuff
+## More cool stuff
 
 * [Xcode tips and tricks](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Other/Xcode.md)
 * [Swift Design Patterns](https://refactoring.guru/design-patterns/swift)
