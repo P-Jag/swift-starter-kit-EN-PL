@@ -20,9 +20,9 @@
 * [String interpolation](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/String_interpolation.md)
 
 ### Collection Types
-* [Array](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#arrays)
-* [Dictionary](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#dictionaries)
-* [Set](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Collection-Types.md#sets)
+* [Array](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Collection-Types.md#arrays)
+* [Dictionary](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Collection-Types.md#dictionaries)
+* [Set](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Collection-Types.md#sets)
 
 ### Control Flow
 * [Conditional Statements](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Conditional-statements.md)
