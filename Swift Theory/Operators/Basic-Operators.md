@@ -1,4 +1,4 @@
-# Operators
+# Basic Operators
 
 * ## Arithmetic Operators
 ```swift
