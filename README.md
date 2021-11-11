@@ -25,9 +25,9 @@
 * [Set](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Collection-Types.md#sets)
 
 ### Control Flow
-* [Conditional Statements](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Conditional-statements.md)
-* [Loops](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Loops.md)
-* [Switch](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Switch.md)
+* [Conditional Statements](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Control%20Flow/Conditional-statements.md)
+* [Loops](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Control%20Flow/Loops.md)
+* [Switch](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Control%20Flow/Switch.md)
 
 ### Functions
 * [Functions](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Functions.md)
