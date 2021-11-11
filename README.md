@@ -79,7 +79,7 @@
 ### Memory Safety
 
 ### Access Control
-* [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
+* [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Access-control.md)
 
 ## Keywords and core concepts
 
