@@ -7,12 +7,14 @@
 ## Swift Theory
 
 ### Basics
-* [Variables and Constants](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Variables-and-Constans.md)
-* [Data Types](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Data-types.md)
+* [Variables and Constants](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Basics/Variables-and-Constans.md)
+* [Data Types](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Basics/Data-types.md)
+* [Typealias](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Basics/Typealias.md)
+* [Optionals](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Basics/Optionals.md)
 
 ### Operators 
-* [Basic Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Operators.md)
-* [Advanced Operators]() 
+* [Basic Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Operators/Basic-Operators.md)
+* [Advanced Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Operators/Advanced-Operators.md) 
 
 ### String and Characters 
 * [String interpolation](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/String_interpolation.md)
@@ -79,7 +81,7 @@
 ### Memory Safety
 
 ### Access Control
-* [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Swift%20Theory/Access-control.md)
+* [Access Control](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Access-control.md)
 
 ## Keywords and core concepts
 
