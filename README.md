@@ -121,6 +121,7 @@
 
 ## Testing
 
+* [Key concepts - Fake, Mock, Stub, Spy](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Key-concepts.md)
 * [Unit Testing](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Unit-tests.md)
 * [UI Testing](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/UI-tests.md)
 
