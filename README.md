@@ -97,7 +97,8 @@
 ## How it's done?
 
 * [UI Components - programmatically](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/UIComponents.md)
-* [.reloadData() in TableView](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/tableView.md)
+* [.reloadData() in TableView](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/TableView.md)
+* [Websockets](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/HID/Websockets.md)
 
 ## Advanced
 
