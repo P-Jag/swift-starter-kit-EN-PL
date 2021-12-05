@@ -98,6 +98,7 @@
 
 * [UI Components - programmatically](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/UIComponents.md)
 * [.reloadData() in TableView](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/TableView.md)
+* [UITableViewDiffableDataSource](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/HID/DiffableDataSource.md)
 * [Websockets](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/HID/Websockets.md)
 
 ## Advanced
