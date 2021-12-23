@@ -19,7 +19,7 @@ let observable = Observable.just(value) // Observable for JUST one element
 //for collections:
 
 let observable2 = Observable.of(value, value, value) // Observable<Int> for int one by one
-let observable3 = Observable.of([value, value, value]) // Observable<[Int]> for whole array
+let observable3 = Observable.of([1, 67, 176]) // Observable<[Int]> for whole array
 
 let observable4 = Observable.from(["A","B","C","D","E"]) // Observable<Int> function on single elements from array not on array as all
 ```
@@ -136,7 +136,36 @@ Now we are sure that our subscriber will be disposed when needs to be
 
 **EN:**
 
+Subjects are both observable and observer. What does it mean? Subjects are getting events and then forward result to subscribers. 
+
 **PL:**
+
+Subjects są zarówno obserwatorami jak i obserwującymi. Otrzymują one jakiś określony event po czym przekazują jego rezultat dalej - do subskrybentów. 
+
+**Publish Subject**
+
+```swift
+```
+
+**Behavior Subject**
+
+```swift
+```
+
+**Replay Subject**
+
+```swift
+```
+
+**Variables** (Deprecated)
+
+```swift
+```
+
+**BehaviorRelay**
+
+```swift
+```
 
 ## Filtering Operators
 
