@@ -142,27 +142,77 @@ Subjects are both observable and observer. What does it mean? Subjects are getti
 
 Subjects są zarówno obserwatorami jak i obserwującymi. Otrzymują one jakiś określony event po czym przekazują jego rezultat dalej - do subskrybentów. 
 
-**Publish Subject**
+**PublishSubject**
+
+**EN:**
+
+PublishSubject can be subscribed and also emit events. Important thing is that every event which we want te emit has to be delcarated after setting a subscription. Someone has to recieve this event (example 1)
+
+**PL:**
+
+PublishSubject może emitować eventy oraz być subskrybowany. Należy pamiętać, że każdy event który chcemy wemitować musi być określony po nadaniu subskrybcji - ktoś to musi odebrać. (example 1)
+
+```swift
+
+let pubSubject = PublishSubject<T>() // t - stands for type like String, Int, Bool etc.
+
+pubSubject.onNext(event to emit)
+
+```
+Example 1
+
+```swift
+
+let subject = PublisSubject<Int>() // now its empty
+
+subject.onNext(1)
+
+subject.subscribe { event in
+  print(event)
+}
+
+subject.onNext(3)
+subject.onNext(56)
+
+//Print output will be: next(3), next(56). onNext(1) event has no subscribers yet.
+
+subject.dispose() 
+
+subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines above. Same in case of onComplete() func.
+```
+
+**BehaviorSubject**
+
+**EN:**
+
+**PL:**
 
 ```swift
 ```
 
-**Behavior Subject**
+**ReplaySubject**
 
-```swift
-```
+**EN:**
 
-**Replay Subject**
+**PL:**
 
 ```swift
 ```
 
 **Variables** (Deprecated)
 
+**EN:**
+
+**PL:**
+
 ```swift
 ```
 
 **BehaviorRelay**
+
+**EN:**
+
+**PL:**
 
 ```swift
 ```
