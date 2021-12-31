@@ -10,7 +10,7 @@ Basic concept of **Observables/Sequence** is that every time when we emit event 
 
 Najprościej rzecz ujmująć **Observable/Sequence** pozwala nam kontrolować zmiany wywołane przez jakiś event np. kliknięcie czy scrollowanie ekranu. Dzięki ich subskrybcji możemy wyłapać zmianę danej wartości.
 
-**Implementing Observable - most common cases**
+> **Implementing Observable - most common cases**
 
 ```swift 
 
@@ -34,7 +34,7 @@ Subskrybując observable otrzymujemy dostęp do wartości, które są przez nieg
 
 ### Subscribe 
 
-**Implemening Subscription**
+> **Implemening Subscription**
 
 ```swift 
 
@@ -43,7 +43,7 @@ observable4.subscribe = { event in
 }
 ```
 
-**How to get values?**
+> **How to get values?**
 
 ```swift
 observable4.subscribe = { event in
@@ -53,7 +53,7 @@ observable4.subscribe = { event in
 }
 ```
 
-**onNext:**
+> **onNext:**
 
 **EN:**
 
@@ -73,7 +73,7 @@ observable4.subscribe(onNext: { element in
 
 ```
 
-**Create function - for subscription** 
+> **Create function - for subscription** 
 
 ```swift
 
@@ -92,7 +92,7 @@ Observable<String>.create = { observer in
 ```
 ### Dispose
 
-**Disposing and Terminating**
+> **Disposing and Terminating**
 
 **EN:**
 
@@ -142,7 +142,7 @@ Subjects are both observable and observer. What does it mean? Subjects are getti
 
 Subjects są zarówno obserwatorami jak i obserwującymi. Otrzymują one jakiś określony event po czym przekazują jego rezultat dalej - do subskrybentów. 
 
-**PublishSubject**
+> **PublishSubject**
 
 **EN:**
 
@@ -181,7 +181,7 @@ subject.dispose()
 subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines above. Same in case of onComplete() func.
 ```
 
-**BehaviorSubject**
+> **BehaviorSubject**
 
 **EN:**
 
@@ -190,7 +190,7 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-**ReplaySubject**
+> **ReplaySubject**
 
 **EN:**
 
@@ -199,7 +199,7 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-**Variables** (Deprecated)
+> **Variables** (Deprecated)
 
 **EN:**
 
@@ -208,7 +208,7 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-**BehaviorRelay**
+> **BehaviorRelay**
 
 **EN:**
 
