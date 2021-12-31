@@ -1,6 +1,6 @@
-# RxSwift
+# RxSwift - all in guide
 
-## Observables
+# Observables
 
 **EN:**
 
@@ -10,7 +10,7 @@ Basic concept of **Observables/Sequence** is that every time when we emit event 
 
 Najprościej rzecz ujmująć **Observable/Sequence** pozwala nam kontrolować zmiany wywołane przez jakiś event np. kliknięcie czy scrollowanie ekranu. Dzięki ich subskrybcji możemy wyłapać zmianę danej wartości.
 
-> **Implementing Observable - most common cases**
+### Implementing Observable - most common cases
 
 ```swift 
 
@@ -32,9 +32,9 @@ When you subscribe observable than you have an access to values which are observ
 
 Subskrybując observable otrzymujemy dostęp do wartości, które są przez niego obserwowane. Warto jednak pamiętać, że subscribe zrwaca event, a nie wartość samą w sobie.
 
-### Subscribe 
+## Subscribe 
 
-> **Implemening Subscription**
+### Implemening Subscription
 
 ```swift 
 
@@ -43,7 +43,7 @@ observable4.subscribe = { event in
 }
 ```
 
-> **How to get values?**
+### How to get values?
 
 ```swift
 observable4.subscribe = { event in
@@ -53,7 +53,7 @@ observable4.subscribe = { event in
 }
 ```
 
-> **onNext:**
+### onNext:
 
 **EN:**
 
@@ -73,7 +73,7 @@ observable4.subscribe(onNext: { element in
 
 ```
 
-> **Create function - for subscription** 
+### Create function - for subscription
 
 ```swift
 
@@ -90,9 +90,9 @@ Observable<String>.create = { observer in
 }.subscribe(onNext: { }, onError: { }, onCompleted: { }, onDisposed: { }).dispose(by: disposeBag)
 
 ```
-### Dispose
+## Dispose
 
-> **Disposing and Terminating**
+### Disposing and Terminating
 
 **EN:**
 
@@ -132,7 +132,7 @@ Now we are sure that our subscriber will be disposed when needs to be
 
 ```
 
-## Subjects
+# Subjects
 
 **EN:**
 
@@ -142,7 +142,7 @@ Subjects are both observable and observer. What does it mean? Subjects are getti
 
 Subjects są zarówno obserwatorami jak i obserwującymi. Otrzymują one jakiś określony event po czym przekazują jego rezultat dalej - do subskrybentów. 
 
-> **PublishSubject**
+## PublishSubject
 
 **EN:**
 
@@ -181,7 +181,7 @@ subject.dispose()
 subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines above. Same in case of onComplete() func.
 ```
 
-> **BehaviorSubject**
+## BehaviorSubject
 
 **EN:**
 
@@ -190,7 +190,7 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-> **ReplaySubject**
+## ReplaySubject
 
 **EN:**
 
@@ -199,7 +199,7 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-> **Variables** (Deprecated)
+## Variables (Deprecated)
 
 **EN:**
 
@@ -208,7 +208,7 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-> **BehaviorRelay**
+## BehaviorRelay
 
 **EN:**
 
@@ -217,14 +217,14 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 ```swift
 ```
 
-## Filtering Operators
+# Filtering Operators
 
-## Transforming Operators
+# Transforming Operators
 
-## Combining Operators
+# Combining Operators
 
-## RxCocoa
+# RxCocoa
 
-## Error Handling
+# Error Handling
 
-## MVVM in RxSwift
+# MVVM in RxSwift
