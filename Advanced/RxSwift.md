@@ -185,29 +185,114 @@ subject.onNext(99) // is going to be ingnored. Our subject was disposed 2 lines 
 
 **EN:**
 
+We can say that is similar to PublishSubject with this difference that BehaviorSubject emit last known value and also have to have an initial value. 
+
 **PL:**
 
+W skrócie jest to to samo co PublishSubject z tą różnica, że BehaviorSubject zwraca ostatnią znaną wartość. Musi również zostać zinicjalizowany z jakąś wartością domyślną (nie może być pusty)
+
 ```swift
+
+let subject = BehaviorSubject(value: "Initial") 
+
+subject.onNext("Value 2")
+
+subject.subscribe { event in 
+  print(event)
+}
+
+subject.onNext("Value 3")
+
+//output 
+"Value 2", "Value 3".
+
 ```
 
 ## ReplaySubject
 
 **EN:**
 
+Replay events based on buffor size we will set. Ex. if we set buffor on 3 than new subscribers will get last 3 values emited by this subject.  
+
 **PL:**
 
+Powtarza eventy w zależności od bufora jaki ustawimy. Jeśli nadamy mu wartość 3 to każdy nowy subskrybent "otrzyma" trzy ostatnie emitowane wartości.
+
 ```swift
+
+let subject = ReplaySubject<String>.create(bufferSize: 3)
+
+//emit events
+subject.onNext("event 1")
+subject.onNext("event 2")
+subject.onNext("event 3")
+subject.onNext("event 4")
+
+//subscribe
+
+subject.subscribe {
+  print($0) // print event
+}
+
+//output
+"event 2", "event 3", "event 4"
 ```
 
 ## Variables (Deprecated)
 
 **EN:**
 
+Variables wraps up BehaviorSubject and store values in state. To have access to stored data just use .value, however Variables are deprecated, but you might found it in older projects. (Variable -> BehaviorRelay).
+
+It's cool that subscribe on variable fires every time when we made a change (Ex 2 below)
+
 **PL:**
 
-```swift
-```
+Variables opakowują BehaviorSubject i przechowują wartości, do których dostęp możesz uzyskać korzystająć z .value. Jednakże Variables są już nie używane, to może zdażyć się, że trafisz na nie w starszych projetach. (Zamiast Variable -> BehaviorRelay)
 
+Subskrybcja Variable odpala się za każdym razem kiedy wprowadzimy jakąś zmianę. (Przykład 2 poniżej)
+
+```swift
+
+var variable = Variable("Initial")
+
+variable.value // "Initial"
+variable.value = "New Initial"
+
+//how to get this value
+
+variable.asObservable()
+  .subscribe {
+    print($0)
+  }
+
+//output 
+next(New Initial)
+
+```
+**Example 2**
+
+```swift
+
+var variable  = Variable([String]()) // our variable is an empty array
+
+variable.value.append("Value 1")
+
+variable.asObservable()
+  .subscribe {
+    print($0)
+}
+
+//output1
+next(["Value 1"])
+
+variable.value.append("Value 2")
+
+//output2
+
+next(["Value 1", "Value 2"])
+
+```
 ## BehaviorRelay
 
 **EN:**
