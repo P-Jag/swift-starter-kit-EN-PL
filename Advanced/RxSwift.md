@@ -297,10 +297,93 @@ next(["Value 1", "Value 2"])
 
 **EN:**
 
+BehaviorRelay is a substitute of Variables mentionet above. To have access to it you need to have RxCocoa. 
+The difference between BehaviorRelay and Variables is thay you cannot change value with .value. (know it sounds weird)
+
+Example installation of RxCocoa: 
+
+In your directory (project):
+a) use open podfile command
+b) add: pod 'RxCocoa', '~> version no' 
+c) run pod install
+d) import RxCocoa
+
 **PL:**
 
+BehaviorRelay jest substytutem Variables omawianych powyżej, żeby móc z niego skorzytsać trzeba mieć zainstalowny RxCocoa gdyż jest jego częścią. 
+Różnica między BehaviorRelay i Variables jest taka, że poprzez .value nie można zmienić jego wartości. 
+
 ```swift
+import RxSwift
+import RxCocoa
+
+let relay = BehaviorRelay(value: "Initial") // same like in Variable case
+
+relay.value = "New Initial" // nope - you cannot change the value (read only)
+
+relay.asObservable()
+  .subscribe {
+    print($0)
+}
+
+relay.accept("New Value") // it's new value, not change of old one
+
+//output
+
+next(Initial)
+next(New Value) // new one 
+
 ```
+
+**What if we have an array?**
+
+```swift
+
+let relay = BehaviorRelay(value: [String]()) // next([]) empty array
+
+relay.value.append("New Value") // err 
+
+relay.asObservable()
+  .subscribe {
+    print($0)
+}
+
+// output
+Err - cannot append new value
+
+Use:
+
+relay.accept(["New Value"])
+
+//output 
+next(["New Value"])
+
+//IMPORTANT - if our BehaviorRelay stores value it's going to be replaced!
+
+let relay = BehaviorRelay(value: ["Initial"]) // next(["Initial"])
+
+relay.accept(["New Value"]) // next(["New Value"]) instead of desired next(["Initial", "New Value"])
+
+//How to deal with it? 
+
+// a) add current value to accept func
+
+relay.accept(relay.value + ["New Value"]) // array + array = ["Initial", "New Value"]
+
+// b) store current value in variable
+
+var ourArray = relay.value // ["Initial"]
+ourArray.append("Something")
+ourArray.append("SomethingElse")
+
+relay.accept(ourArray) // accept our changes which we made above
+
+//output
+["Initial", "Something", "SomethingElse"]
+
+```
+
+**DON'T FORGET TO ADD RxCocoa to PODFILE! (and also install and import it)**
 
 # Filtering Operators
 
