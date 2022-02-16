@@ -91,8 +91,13 @@
 * [Guard](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Guard.md)
 * [Persistence](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Persistence.md)
 * [AppDelegate vs SceneDelegate](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/AppDelegate-vs-SceneDelegate.md)
-* [Dependency Injection](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Dependency-Injection.md)
 * [didSet and willSet - property observers](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/didSet.md)
+
+## Dependency Injection
+
+* [Dependency Injection](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Dependency-Injection.md)
+  * [Classic approach](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Dependency-Injection.md#classic-approach)
+  * [Swinject package](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Keywords/Dependency-Injection.md#swinject)
 
 ## How it's done?
 
