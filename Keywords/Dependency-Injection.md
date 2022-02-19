@@ -84,7 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     // 3. Here we are returning array of breeds
     func breeds() -> [DogBreed] {
-        return [BorderCollie(), GermanShephard(), CaneCorso()]
+        return [BorderCollie(), GermanShepherd(), CaneCorso()]
     }
 }
 
@@ -104,9 +104,9 @@ class BorderCollie: DogBreed {
     }
 }
 
-class GermanShephard: DogBreed {
+class GermanShepherd: DogBreed {
     var breedName: String {
-        "German Shephard"
+        "German Shepherd"
     }
     var countryOfOrigin: String {
         "Germany"
