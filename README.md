@@ -138,6 +138,9 @@
 * [Unit Testing](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Unit-tests.md)
 * [UI Testing](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/UI-tests.md)
 
+## Debugging
+* [Debugging tips](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md)
+
 ## Code snippets
 * [UIView - layout extension](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Code%20Snippets/uiview_layout_extension.md)
 
