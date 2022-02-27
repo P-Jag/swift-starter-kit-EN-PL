@@ -140,6 +140,15 @@
 
 ## Debugging
 * [Debugging tips](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md)
+  * [Print Statements](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#print-statements)
+  * [Breakpoints](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#breakpoints)
+  * [Symbolic Breakpoints](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#symbolic-breakpoints)
+  * [View Debugger](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#view-debugger)
+  * [Memory Graph](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#memory-grpah)
+  * [Thread Sanitizer](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#thread-sanitizer)
+  * [Address Sanitizer](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#address-sanitizer)
+  * [Reverse Engineering Basics](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#reverse-engineering-basics)
+  * [Instruments Time Profiler](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#instruments-time-profiler)
 
 ## Code snippets
 * [UIView - layout extension](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Code%20Snippets/uiview_layout_extension.md)
