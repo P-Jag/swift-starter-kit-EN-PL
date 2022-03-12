@@ -73,6 +73,8 @@ If you double-click on breakpoint you can set specific conditions, ingore some e
 
 Jeśli klikniesz dwa razy w breakpoint będziesz mógł go dowolnie skonfingurować m.in: nadając mu warunki do spełnienia, wymuszając pominiecie wybranej liczby wywołań czy skonfigurować sposób powiadomienia, że wybrany breakpoint jest aktywny.
 
+<img width="549" alt="Screenshot 2022-03-12 at 14 49 58" src="https://user-images.githubusercontent.com/58946631/158020661-5ee1e826-015a-4cdb-be21-a7d22f81d9db.png">
+
 
 ## Symbolic Breakpoints
 
