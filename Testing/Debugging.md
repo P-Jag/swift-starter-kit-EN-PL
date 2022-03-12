@@ -65,9 +65,14 @@ extension CustomDebugStringConvertible {
 
 ## Breakpoints
 
-**EN:**
+**EN:** Breakpoint it's just a way to stop executing program which let you inspect values, state and also change it. 
 
-**PL:**
+If you double-click on breakpoint you can set specific conditions, ingore some executions and also configure how debug should inform you that was reached. 
+
+**PL:** Breakpointy zatrzymują wykonywanie programu, dzięki czemu z łatwością możesz sprawdzić i zmienić wartości czy dokonać inspekcji stanu w jakim jest Twoja aplikacja.
+
+Jeśli klikniesz dwa razy w breakpoint będziesz mógł go dowolnie skonfingurować m.in: nadając mu warunki do spełnienia, wymuszając pominiecie wybranej liczby wywołań czy skonfigurować sposób powiadomienia, że wybrany breakpoint jest aktywny.
+
 
 ## Symbolic Breakpoints
 
