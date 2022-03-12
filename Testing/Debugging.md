@@ -2,9 +2,9 @@
 
 ## Print statements
 
-**EN:** As the name suggests print statements helps us to print desired value in debug console. In Swift there's two types of prints: print() and debugPrint()
+**EN:** As the name suggests print statements helps us to print desired value in debug console. In Swift there's two types of prints: **print() and debugPrint()**
 
-**PL:** Jak sama nazwa wskazuje print pozwala nam 'wydrukować' porządaną wartość w debugerze. W Swifcie rozróżniamy dwa rodzaje printów: print() i debugPrint()
+**PL:** Jak sama nazwa wskazuje print pozwala nam 'wydrukować' porządaną wartość w debugerze. W Swifcie rozróżniamy dwa rodzaje printów: **print() i debugPrint()**
 
 ```swift 
 
@@ -74,6 +74,38 @@ If you double-click on breakpoint you can set specific conditions, ingore some e
 Jeśli klikniesz dwa razy w breakpoint będziesz mógł go dowolnie skonfingurować m.in: nadając mu warunki do spełnienia, wymuszając pominiecie wybranej liczby wywołań czy skonfigurować sposób powiadomienia, że wybrany breakpoint jest aktywny.
 
 <img width="549" alt="Screenshot 2022-03-12 at 14 49 58" src="https://user-images.githubusercontent.com/58946631/158020661-5ee1e826-015a-4cdb-be21-a7d22f81d9db.png">
+
+**EN:** When your program hits the breakpoint then your able to use commands in debugger window  **(lldb)**. 
+
+**PL:** Kiedy wybrany breakpoint zatrzyma działanie programu, wówczas w oknie debuggera **(lldb)** będziesz mógł korzystać z komend jak:
+
+```swift 
+
+// Our dummy class for test puprose 
+ 
+class Person {
+     var name: String
+     var age: Int
+
+     init(name: String, age: Int) {
+          self.name = name
+          self.age = age
+     }
+}
+
+var person1 = Person(name: "Mike", age: 27)
+
+```
+
+Some basics lldb commands: 
+
+* **help** - turn on menu with available commands // **help po** - shows description how **po** command works
+
+* **po** - print out description of the object // **po person1** (if preson1 object exists ofc)
+
+* **e** - expression allow us to change the value // **e person1.name = "Adam"** - we change name from Mike to Adam
+
+* **c** - continume execution
 
 
 ## Symbolic Breakpoints
