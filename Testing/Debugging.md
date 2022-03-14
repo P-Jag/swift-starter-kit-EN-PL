@@ -158,3 +158,15 @@ Some basics lldb commands:
 
 <img width="793" alt="Screenshot 2022-03-14 at 19 57 16" src="https://user-images.githubusercontent.com/58946631/158241910-2c98656d-2c4c-4719-8d33-1aba9ba23164.png">
 
+**EN:** The second thing which can help you to find memory leaks is Debug Memory Graph - which can be turned on by clicking button below. 
+
+**PL:** Drugim narzędziem pozwalającym na łatwiejszą lokalizację przecieków jest Debug Memory Graph - który włączamy za pomocą przycisku poniżej. 
+
+<img width="379" alt="Screenshot 2022-03-14 at 20 03 05" src="https://user-images.githubusercontent.com/58946631/158243565-490a52f9-1d7c-478d-8c4c-5a7296e45a80.png">
+
+**EN:** Debug Memory Graph is presenting structure (graph) of conections between objects.
+
+**PL:** Debug Memory Graph przedstawia diagram połączeń pomiędzy obiektami.
+
+
+
