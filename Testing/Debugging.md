@@ -149,3 +149,12 @@ Some basics lldb commands:
 **EN:**
 
 **PL:**
+
+## Bonus: Memory leaks - how to find and fix
+
+**EN:** To diagnose memory leak you can use Instruments which is a part of Xcode. Instruments provides multiple templates for drilling down not only memory leaks. You can use it to check threads, network and more. 
+
+**PL:** Do zdiagonozowania wycieku danych możemy użyć Instruments, które masz zainstalowane razem z Xcodem. Instruments zawiera templatki do badania/grzebania w projekcie nie tylko pod względem wycieków. Świetnia sprawdza się również w przypadku weryfikacji poprawnego działania wątków czy networkingu. 
+
+<img width="793" alt="Screenshot 2022-03-14 at 19 57 16" src="https://user-images.githubusercontent.com/58946631/158241910-2c98656d-2c4c-4719-8d33-1aba9ba23164.png">
+
