@@ -149,6 +149,7 @@
   * [Address Sanitizer](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#address-sanitizer)
   * [Reverse Engineering Basics](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#reverse-engineering-basics)
   * [Instruments Time Profiler](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Testing/Debugging.md#instruments-time-profiler)
+  * [Bonus: Memory leaks - how to find and fix](https://github.com/P-Jag/swift-starter-kit-EN-PL/edit/main/Testing/Debugging.md#bonus-memory-leaks---how-to-find-and-fix)
 
 ## Code snippets
 * [UIView - layout extension](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Code%20Snippets/uiview_layout_extension.md)
