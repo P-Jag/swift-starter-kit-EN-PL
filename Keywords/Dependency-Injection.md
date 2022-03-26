@@ -129,3 +129,15 @@ class CaneCorso: DogBreed {
 **EN:**
 
 **PL:**
+
+#### Adding Swinject via pods
+
+In terminal type: 
+
+```
+pod init // initializa cocoapods - you might have not installed 
+
+open Podfile // Open Podfile and add Swinject - pod 'Swinject', save file and close.
+
+pod install // to install dependencies in this case Swinject package
+```
