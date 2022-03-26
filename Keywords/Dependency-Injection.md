@@ -126,9 +126,9 @@ class CaneCorso: DogBreed {
 
 ### Swinject 
 
-**EN:**
+**EN:** The core concept of Dependency Injection is to pass around concrete instances of objects which meets a specific singature needs. For example protocol can defines those needs. [Read about protocols](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Basics/Protocols.md)
 
-**PL:**
+**PL:** Głównym założeniem Dependecy Injection jest przekazywanie/wstrzykiwanie konkretnych instancji obiektów w miejsce, w których ich potzrebujemy, jednakże muszą spełniać one konkretne założone przez nas wymagania. Wymagania te możemy ustalić wewnątrz protokołu. 
 
 #### Adding Swinject via pods
 
@@ -139,5 +139,5 @@ pod init // initializa cocoapods - you might have not installed
 
 open Podfile // Open Podfile and add Swinject - pod 'Swinject', save file and close.
 
-pod install // to install dependencies in this case Swinject package
+pod install // to install packages in this case Swinject
 ```
