@@ -397,7 +397,7 @@ relay.accept(ourArray) // accept our changes which we made above
 
 ```
 
-## Element at
+## Element At
 
 **EN:**
 
@@ -427,7 +427,7 @@ relay.accept(ourArray) // accept our changes which we made above
 
 ```
 
-## Skip while
+## Skip While
 
 **EN:**
 
@@ -437,7 +437,7 @@ relay.accept(ourArray) // accept our changes which we made above
 
 ```
 
-## Skip until
+## Skip Until
 
 **EN:**
 
@@ -457,7 +457,7 @@ relay.accept(ourArray) // accept our changes which we made above
 
 ```
 
-## Take while
+## Take While
 
 **EN:**
 
@@ -467,7 +467,7 @@ relay.accept(ourArray) // accept our changes which we made above
 
 ```
 
-## Take until 
+## Take Until 
 
 **EN:**
 
@@ -520,6 +520,76 @@ relay.accept(ourArray) // accept our changes which we made above
 ```
 
 # Combining Operators
+
+## Starts With 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Concat 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Merge 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Combine Latest 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## With Latest Form 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Reduce 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Scan 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
 
 # RxCocoa
 
