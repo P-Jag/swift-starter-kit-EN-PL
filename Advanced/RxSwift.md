@@ -455,11 +455,18 @@ Observable.of(1,2,3,4,5,6,7)
 
 ## Skip
 
-**EN:**
+**EN:** skip(int) skips selected number of values
 
-**PL:**
+**PL:** skip(int) pomija wybraną ilość elementów w sekwencji. 
 
 ```swift
+let disposeBag = DisposeBag()
+
+Observable.of("Dog", "Cat", "Parrot", "Shark")
+  .skip(2)
+  .subscribe(onNext: {
+     print($0) // we are going to print all elements despite of first 2 - print results are both Parrot and Shark
+}).disposed(by: disposeBag)
 
 ```
 
