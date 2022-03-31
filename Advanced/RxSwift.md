@@ -479,6 +479,46 @@ relay.accept(ourArray) // accept our changes which we made above
 
 # Transforming Operators
 
+## To Array 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Map 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Flat Map 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Flat Map Latest 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
 # Combining Operators
 
 # RxCocoa
