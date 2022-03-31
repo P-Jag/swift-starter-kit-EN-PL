@@ -431,18 +431,25 @@ sequenceElement
     }.disposed(by: disposeBag)
 
 sequenceElement.onNext("First") // nothing happends - index 0
-sequenceElement.onNext("Second") // our print statement is fired - index 1 which we select
+sequenceElement.onNext("Second") // our print statement is fired - index 1 which we selected on .elementAt()
 sequenceElement.onNext("Third") // nothing happends - index 2
 
 ```
 
 ## Filter
 
-**EN:**
+**EN:** filter() is just filtering values in sequence.
 
-**PL:**
+**PL:** filter() po prostu filtruje wartości w sekwencji.
 
 ```swift
+let disposeBag = DisposeBag()
+
+Observable.of(1,2,3,4,5,6,7)
+  .filter { $0 % 2 = 0 } // $0 - means our value
+  .subscribe(onNext: {
+     print($0) // we are going to print all even numbers from observable - 2,4,6
+}).disposed(by: disposeBag)
 
 ```
 
