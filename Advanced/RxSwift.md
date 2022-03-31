@@ -389,21 +389,50 @@ relay.accept(ourArray) // accept our changes which we made above
 
 ## Ignore
 
-**EN:**
+**EN:** ignoreElements() filter ignore all elements within sequene, however, completed event is still triggered.
 
-**PL:**
+**PL:** ingoreElements() ignoruje wszystkie elementy w konkretnej sekwencji. Mimo, to że je pomijamy to wybrany event wciąż jest w toku. 
 
 ```swift
+
+let sequenceElement = PublishSubject<String>() // create subject which publish elements of type string
+let disposeBag = DisposeBag()
+
+sequenceElement
+    .ignoreElements()
+    .subscribe { _ in
+        print("Subscribe is fired!")
+    }.disposed(by: disposeBag)
+
+sequenceElement.onNext("Some") // nothing
+sequenceElement.onNext("Values") // nothing
+// even if you provide some values print statement will not be executed
+
+sequenceElement.onCompleted() // Subscribe is fired!
+// print statement will be executed only when our sequence is completed
 
 ```
 
 ## Element At
 
-**EN:**
+**EN:** elementAt(index) will provide value from selected index from whole sequence
 
-**PL:**
+**PL:** elementAt(index) zwraca wskazaną po indexie wartość z naszej sekwencji. 
 
 ```swift
+let sequenceElement = PublishSubject<String>()
+let disposeBag = DisposeBag()
+
+
+sequenceElement
+    .elementAt(1) // we select index no. 1 which is our 2nd 
+    .subscribe { _ in
+        print("Subscribe is fired!")
+    }.disposed(by: disposeBag)
+
+sequenceElement.onNext("First") // nothing happends - index 0
+sequenceElement.onNext("Second") // our print statement is fired - index 1 which we select
+sequenceElement.onNext("Third") // nothing happends - index 2
 
 ```
 
