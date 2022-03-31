@@ -438,9 +438,9 @@ sequenceElement.onNext("Third") // nothing happends - index 2
 
 ## Filter
 
-**EN:** filter() is just filtering values in sequence.
+**EN:** filter { } is just filtering values in sequence.
 
-**PL:** filter() po prostu filtruje wartości w sekwencji.
+**PL:** filter { } po prostu filtruje wartości w sekwencji.
 
 ```swift
 let disposeBag = DisposeBag()
@@ -472,11 +472,14 @@ Observable.of("Dog", "Cat", "Parrot", "Shark")
 
 ## Skip While
 
-**EN:**
+**EN:** skipWhile { } skips elements until given conditon is met. Further elements which do not met given condition are still going to be a part of sequence.
 
-**PL:**
+**PL:** skipWhile { } pomija elementy w sekwencji póki nie zostanie spełniony podany warunek, później mimo iż kolejne elementy mogą go nie spełniać to i tak zostaną przekazane - już raz został spełniony.
 
 ```swift
+let disposeBag = DisposeBag()
+
+
 
 ```
 
