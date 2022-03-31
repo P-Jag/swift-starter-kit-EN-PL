@@ -387,6 +387,96 @@ relay.accept(ourArray) // accept our changes which we made above
 
 # Filtering Operators
 
+## Ignore
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Element at
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Filter
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Skip
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Skip while
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Skip until
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Take 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Take while
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
+## Take until 
+
+**EN:**
+
+**PL:**
+
+```swift
+
+```
+
 # Transforming Operators
 
 # Combining Operators
