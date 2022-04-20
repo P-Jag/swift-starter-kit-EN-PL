@@ -540,7 +540,7 @@ Observable.of("A", "B", "C", "D", "E")
 let disposeBag = DisposeBag()
 
 Observable.of(2,4,6,8,9,10,12,14)
-  .takeWhile { $0 % 2 == 0} // should return all even numbers?
+  .takeWhile { return $0 % 2 == 0} // should return all even numbers?
   .subscribe(onNext: {
     print($0) // print output (2,4,6,8) without 10, 12, 14, because 9 appers and stops execution (in this case $0 % 2 == 1)
 }).disposed(by: disposeBag)
@@ -594,19 +594,26 @@ Observable.of(2,4,6,8) // single elements
 
 ## Map 
 
-**EN:**
+**EN:** map provides logic to each element in given sequence. It goes throug it and do 'something we want'.
 
-**PL:**
+**PL:** map przechodzi przez sekwencję i dodaje logikę, wykonuje działanie na każdym poszczególnym elemencie.
 
 ```swift
+let disposeBag = DisposeBag()
+
+Observable.of(2,4,6,8) 
+  .map { return $0 / 2 } // takes every single element and divide it by 2
+  .subscribe(onNext: {
+    print($0) // print output 1, 2, 3, 4
+}).disposed(by: disposeBag)
 
 ```
 
 ## Flat Map 
 
-**EN:**
+**EN:** flatMap
 
-**PL:**
+**PL:** flatMap
 
 ```swift
 
@@ -614,9 +621,9 @@ Observable.of(2,4,6,8) // single elements
 
 ## Flat Map Latest 
 
-**EN:**
+**EN:** flatMapLatest
 
-**PL:**
+**PL:** flatMapLatest
 
 ```swift
 
