@@ -569,8 +569,8 @@ subject.onNext("B") // printed
 
 trigger.onNext("T") // fire trigger
 
-subjece.onNext("Y") // skipped
-subjece.onNext("Z") // skipped
+subject.onNext("Y") // skipped
+subject.onNext("Z") // skipped
 ```
 
 # Transforming Operators
