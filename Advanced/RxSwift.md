@@ -577,11 +577,18 @@ subject.onNext("Z") // skipped
 
 ## To Array 
 
-**EN:**
+**EN:** toArray takes all single elements/values from sequence and then append them inside of array [ ] which can be later used for example to display data in tableView.
 
-**PL:**
+**PL:** toArray bierze każdy pojedyńczy element/wartość z sekwencji, po czym 'wkłada' je do listy [ ], którą można później wykorzytsać do chociażby wyświetlenia danych w tableView.
 
 ```swift
+let disposeBag = DisposeBag()
+
+Observable.of(2,4,6,8) // single elements
+  .toArray
+  .subscribe(onNext: {
+    print($0) // print output [2, 4, 6, 8] array of elements
+}).disposed(by: disposeBag)
 
 ```
 
