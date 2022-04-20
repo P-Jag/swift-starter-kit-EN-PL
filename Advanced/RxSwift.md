@@ -479,48 +479,98 @@ Observable.of("Dog", "Cat", "Parrot", "Shark")
 ```swift
 let disposeBag = DisposeBag()
 
-
+Observable.of(2,2,2,3,4,6)
+  .skipWhile { $0 % 2 == 0} // skip if result of modulo is 0 
+  .subscribe(onNext: {
+    print($0) // print output (3,4,6). Skips all 2 until condition is false, then even if 4 and 6 fulfill condition, remains in sequence
+}).disposed(by: disposeBag)
 
 ```
 
 ## Skip Until
 
-**EN:**
+**EN:** skipUntil operator is waiting for trigger. It skips all elements in sequence until something triggers it. All elements in sequence which are placed after trigger will go through. 
 
-**PL:**
+**PL:** skipUntil pomija wszystkie elementy w sekwencji, czekając na trigger, który pozwoli na przekazanie elementów dalej. Każdy element, który znajduje się w sekwencji po triggerze pójdzie dalej.
 
 ```swift
+let disposeBag = DisposeBag()
 
+let subject = PublishSubject<Int>()
+let trigger = PublishSubject<Int>()
+
+subject.skipUntil(trigger)
+  .subscribe(onNext: {
+    print($0) // print output will be 4 and 5
+  }).disposed(by: disposeBag)
+
+subject.onNext(1) // skipped
+subject.onNext(2) // skipped
+
+triggger.onNext(3) // trigger launch subscription
+
+subject.onNext(4) // printed
+subject.onNexnt(5) // printed
 ```
 
 ## Take 
 
-**EN:**
+**EN:** Take operator takes/pass through selected number of events/elements from sequence - counting from first one
 
-**PL:**
+**PL:** Take bierze określiną ilość elementów z sekwencji i przekazuje dale. Licząc od pierwszego elementu, który się w niej pojawi.
 
 ```swift
+let disposeBag = DisposeBag()
+
+Observable.of("A", "B", "C", "D", "E")
+  .take(3) // takes first 3 elements
+  .subscribe(onNext: {
+    print($0) // print output "A", "B" and "C" our 3 first elements from sequence
+}).disposed(by: disposeBag)
 
 ```
 
 ## Take While
 
-**EN:**
+**EN:** takeWhile takes all elements from sequence till they meet given condition. If even one element does not meet the condition, then takwWhile operator stops wokring.
 
-**PL:**
+**PL:** takeWhile wyciąga wszystkie elementy, dopóki spełniają one dany warunek. Jeśli natrafi na tak, który go nie spełni, wówczas przestaje się wykonywać.
 
 ```swift
+let disposeBag = DisposeBag()
+
+Observable.of(2,4,6,8,9,10,12,14)
+  .takeWhile { $0 % 2 == 0} // should return all even numbers?
+  .subscribe(onNext: {
+    print($0) // print output (2,4,6,8) without 10, 12, 14, because 9 appers and stops execution (in this case $0 % 2 == 1)
+}).disposed(by: disposeBag)
 
 ```
 
 ## Take Until 
 
-**EN:**
+**EN:** takeUntil returns all values/elements which appear in sequence before trigger. 
 
-**PL:**
+**PL:** takeUntil zwraca wszystkie wartości/elementy z sekwencji, dopóki nie napotka na trigger - on zatrzymuje jego działanie. 
 
 ```swift
+let disposeBag = DisposeBag()
 
+let subject = PublishSubject<String>()
+let trigger = PublishSubject<String>()
+
+subject.takeUntil(trigger)
+  .subscribe(onNext: {
+    print($0) // print output is A and B
+  }).disposed(by: disposeBag)
+
+subject.onNext("A") // printed
+subject.onNext("B") // printed
+
+trigger.onNext("T") // fire trigger
+
+subjece.onNext("Y") // skipped
+subjece.onNext("Z") // skipped
 ```
 
 # Transforming Operators
