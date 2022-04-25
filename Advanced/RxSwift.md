@@ -645,11 +645,27 @@ weather.today.accept(24) // return 24
 
 ## Flat Map Latest 
 
-**EN:** flatMapLatest
+**EN:** flatMapLatest cooperates only with latest observable. If we cange it, then old one will be ignored.
 
-**PL:** flatMapLatest
+**PL:** flatMapLatest działa tylko z 'ostatim' osbervablem. Jeśli go zmienimy, wówczas przerzuci się na nowy, a ten stary będzie ignorownay. 
 
 ```swift
+
+// same example as above 
+
+weather.asObservable()
+  .flatMapLatest { $0.temp.asObservable } // now our temp value is observable
+  .subscribe(onNext: { // every time we trigger event than temp value will be returned
+    print($0)
+  }).disposed(by: disposeBag)
+
+weather.onNext(today) // return 20
+weather.today.accept(22) // return 22
+
+weather.onNext(tomorrow) // return 25 - Here we change observable 
+weather.tomorrow.accept(30) // return 30
+
+weather.today.accept(24) // IGNORE - we chenge our observable from today to tomorrow and all actions taken on today are going to be ignored.
 
 ```
 
