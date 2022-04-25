@@ -611,12 +611,36 @@ Observable.of(2,4,6,8)
 
 ## Flat Map 
 
-**EN:** flatMap
+**EN:** flatMap takes observable value and transform it to observable target
 
-**PL:** flatMap
+**PL:** flatMap zamienia obserwowaną wartość na target. Co to właściwie znaczy?
 
 ```swift
 
+struct Weather {
+  var temp: BehaviorRelay<Int>
+}
+
+let today = Weather(temp: BehaviorRelay(value: 20))
+let tomorrow = Weather(temp: BehaviorRelay(value: 25))
+
+let weather = PublishSubject<Weather>
+
+weather.asObservable()
+  .flatMap { $0.temp.asObservable } // now our temp value is observable
+  .subscribe(onNext: { // every time we trigger event than temp value will be returned
+    print($0)
+  }).disposed(by: disposeBag)
+
+weather.onNext(today) // return 20
+weather.today.accept(22) // return 22
+
+weather.onNext(tomorrow) // return 25
+weather.tomorrow.accept(30) // return 30
+
+weather.today.accept(24) // return 24
+
+// The thing is that even if we chance to tomorrow value, previous one were tracked all the time, so our final output for this actions is - 20, 22, 25, 30, 24
 ```
 
 ## Flat Map Latest 
