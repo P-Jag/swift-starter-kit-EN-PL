@@ -690,21 +690,39 @@ observable.subscribe(onNext: {
 
 ## Concat 
 
-**EN:** concat
+**EN:** concat two sequence into one.
 
-**PL:** concat
+**PL:** concat łączy dwie sekwencje w jedną.
 
 ```swift
+
+var firstSequence = Observable.of(1,2,3)
+var secondSequence = Observable.of(4,5,6)
+
+var thirdSequence = Observable.concat([firstSequence, secondSequence])
+
+thirdSequence.subscribe(onNext: {
+  print($0) // print output is 1,2,3,4,5,6 
+}).disposed(by: disposeBag)
 
 ```
 
 ## Merge 
 
-**EN:** merge
+**EN:** merge works similar like concat operator but with this difference that all values in new sequence are goint to be "ordered" by call/time. It means if we have firstSequence with value 1,2,3 and second with 4,5,6 and value 4 will be executed before 2 and 3 new sequence will have mixed order 1,4,2,3,5,6
 
-**PL:** merge
+**PL:** merge działa podobnie jak concat, z tą różnicą że nowa sekwencja będzie utworzona w sposób w jaki dane wartości zostały 'sięgnięte'. Przykładowo:  Pierwsza sekwencja będzie zawierała wartości 1,2 i 3 a druga 4,5,6. Z tą różnicą, że wartość 4 z drugiej sekwencji pojawi się wcześniej, wówczas nowa sekwencja będzie miała zmienoną kolejność na 1,4,2,3,5,6,
 
 ```swift
+
+var firstSequence = Observable.of(1,2,3)
+var secondSequence = Observable.of(4,5,6)
+
+var thirdSequence = Observable.merge([firstSequence, secondSequence])
+
+thirdSequence.subscribe(onNext: {
+  print($0) // print output is 1,4,2,3,5,6 in this scenario we assumed that 4 appears before 2,3 from first sequence
+}).disposed(by: disposeBag)
 
 ```
 
