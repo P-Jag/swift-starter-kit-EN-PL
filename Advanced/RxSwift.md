@@ -795,9 +795,9 @@ button.onNext(()) // return "Learn RxSwift"
 
 ## Reduce 
 
-**EN:** reduce
+**EN:** reduce takes all elements from sequence and return them as one.
 
-**PL:** reduce
+**PL:** reduce bierze wszystkie elementy z sekwencji i łączy je w jedną. 
 
 ```swift
 
