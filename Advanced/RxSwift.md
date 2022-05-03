@@ -719,14 +719,25 @@ thirdSequence.subscribe(onNext: {
 // firstSequence  --1---2---3------->
 // secondSequence ----4-------5--6-->
 
-var firstSequence = Observable.of(1,2,3)
-var secondSequence = Observable.of(4,5,6)
+var firstSequence = PublishSubject<Int>()
+var secondSequence = PublishSubject<Int>()
 
-var thirdSequence = Observable.merge([firstSequence, secondSequence])
+var source = Observable.of(firstSequence.asObservable(), secondSequence.asObservable())
 
-thirdSequence.subscribe(onNext: {
+var observable = source.merge()
+
+observable.subscribe(onNext: {
   print($0) // print output is 1,4,2,3,5,6 in this scenario we assumed that 4 appears before 2,3 from first sequence
 }).disposed(by: disposeBag)
+
+//if you add new elements than all of them will be merged into source. 
+
+firstSequence.onNext(1)
+secondSequence.onNext(4) // 4 appears before 2 and 3 from first sequence 
+firstSequence.onNext(2)
+firstSequence.onNext(3)
+secondSequence.onNext(5)
+secondSequence.onNext(6)
 
 ```
 
