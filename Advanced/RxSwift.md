@@ -715,6 +715,10 @@ thirdSequence.subscribe(onNext: {
 
 ```swift
 
+
+// firstSequence  --1---2---3------->
+// secondSequence ----4-------5--6-->
+
 var firstSequence = Observable.of(1,2,3)
 var secondSequence = Observable.of(4,5,6)
 
