@@ -801,6 +801,23 @@ button.onNext(()) // return "Learn RxSwift"
 
 ```swift
 
+// Example 1
+
+let source = Observable.of(1,2,3)
+
+source.reduce(0, accumulator: +) // 0 is a seed so our starting point, accumulator says that we want to add all elements
+  .subscribe(onNext: {
+    print($0) // our return is 6 which is a result of 1 + 2 + 3
+}).disposed(by: disposeBag)
+
+// Example 2
+
+source.reduce(0, accumulator: { summary, newValue in
+    return summary + newValue  
+}).subscribe(onNext: {
+    print($0) // our return is 6 which is a result of 1 + 2 + 3
+}).disposed(by: disposeBag)
+
 ```
 
 ## Scan 
