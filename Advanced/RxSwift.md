@@ -673,19 +673,26 @@ weather.today.accept(24) // IGNORE - we chenge our observable from today to tomo
 
 ## Starts With 
 
-**EN:**
+**EN:** startsWith operator inserts given value to a first place in sequence.
 
-**PL:**
+**PL:** startsWith wstawia wybraną wartość na początek sekwencji. 
 
 ```swift
+
+var numbers = Observable.of(6,7,8)
+var observable = numbers.startsWith(2)
+
+observable.subscribe(onNext: {
+  print($0) // our print is 2,6,7,8 - startsWith insert 2 at the begining fo the sequence
+}).disposed(by: disposeBag)
 
 ```
 
 ## Concat 
 
-**EN:**
+**EN:** concat
 
-**PL:**
+**PL:** concat
 
 ```swift
 
@@ -693,9 +700,9 @@ weather.today.accept(24) // IGNORE - we chenge our observable from today to tomo
 
 ## Merge 
 
-**EN:**
+**EN:** merge
 
-**PL:**
+**PL:** merge
 
 ```swift
 
@@ -703,9 +710,9 @@ weather.today.accept(24) // IGNORE - we chenge our observable from today to tomo
 
 ## Combine Latest 
 
-**EN:**
+**EN:** combineLatest
 
-**PL:**
+**PL:** combineLatest
 
 ```swift
 
@@ -713,9 +720,9 @@ weather.today.accept(24) // IGNORE - we chenge our observable from today to tomo
 
 ## With Latest Form 
 
-**EN:**
+**EN:** withLatestForm
 
-**PL:**
+**PL:** withLatestForm
 
 ```swift
 
@@ -723,9 +730,9 @@ weather.today.accept(24) // IGNORE - we chenge our observable from today to tomo
 
 ## Reduce 
 
-**EN:**
+**EN:** reduce
 
-**PL:**
+**PL:** reduce
 
 ```swift
 
@@ -733,9 +740,9 @@ weather.today.accept(24) // IGNORE - we chenge our observable from today to tomo
 
 ## Scan 
 
-**EN:**
+**EN:** scan
 
-**PL:**
+**PL:** scan
 
 ```swift
 
