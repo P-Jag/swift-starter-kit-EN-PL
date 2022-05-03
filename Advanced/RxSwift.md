@@ -845,6 +845,28 @@ source.scan(0, accumulator: +)
 
 # RxCocoa
 
+**EN:** RxCocoa is a framework which provides custom wrappers for UI controls and some SDK classes to easier maintain reactive behaviour in our app. If RxCocoa do not contain desired wrapper we can easily create it. 
+
+**PL:** RxCocoa zawiera wrappery dla kontrolek UI oraz niektórych klas w SDK. Dzięki nim łatwej jest dodać i utzymać reaktywność aplikacji. Jeśli w bibliorece RxCocoa nie znajdziemy pożądanego wrappera możemy je stworzyć sami. 
+
+## Binding Observables
+
+**EN:**
+
+**PL:**
+
+## ControlProperty and Driver
+
+**EN:**
+
+**PL:**
+
+## Disposing with RxCocoa
+
+**EN:**
+
+**PL:**
+
 # Error Handling
 
 # MVVM in RxSwift
