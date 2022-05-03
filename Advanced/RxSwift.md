@@ -743,22 +743,54 @@ secondSequence.onNext(6)
 
 ## Combine Latest 
 
-**EN:** combineLatest
+**EN:** combineLatest returns latest values from both sequences which we choose to combine. 
 
-**PL:** combineLatest
+**PL:** combineLatest zwraca ostatnie wartości z obu wybranych sekwencji. 
 
 ```swift
+
+let firstSequence = PublishSubject<Int>()
+let secondSequence = PublishSubject<Int>()
+
+let observable = Observable.combineLatest(firstSequence, secondSequence, resultSelector: { lastFromFirst, lastFromSecond in 
+  "\(lastFromFirst) and \(lastFromSecond)"
+}) 
+
+let disposable = observable.subscribe(onNext: { value in
+  print(value)
+}).disposed(by: disposeBag)
+
+firstSequence.onNext(40) // 40 1
+secondSequence.onNext(1) // 40 1
+firstSequence.onNext(55) // 55 1
+secondSequence.onNext(11) // 55 11
+secondSequence.onNext(15) // 55 15
 
 ```
 
 ## With Latest Form 
 
-**EN:** withLatestForm
+**EN:** withLatestForm gives us latest value from sequence. In some way it's waiting until everything is done. To understand it better let's image that we have a button, and textfield and when we taps on button, textfield returns entered value. 
 
-**PL:** withLatestForm
+**PL:** withLatestForm zwraca nam ostatnią wartość z sekwencji. W pewnym sensie czeka, aż będzie ona kompletna. Żeby lepiej sobie to zobrazować, przyjmijmy, że mamy button, po którego naciśnięciu textfield zwraca wpisany w niego tekst. 
 
 ```swift
 
+let button = PublishSubject<Void>()
+let textField = PublishSubject<String>()
+
+let observable = button.withLatestForm(textField) // so we connect button with textField
+
+let disposable = observable.subscribe(onNext: {
+  print($0)
+})
+
+textField.onNext("Lea") // wait
+textField.onNext("Learn Rx") // wait
+textField.onNext("Learn RxSwift") // done
+
+button.onNext(()) // return "Learn RxSwift"
+button.onNext(()) // return "Learn RxSwift"
 ```
 
 ## Reduce 
