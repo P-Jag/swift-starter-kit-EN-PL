@@ -115,6 +115,9 @@
   * [Transforming Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#transforming-operators)
   * [Combinig Operators](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#combining-operators)
   * [RxCocoa](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#rxcocoa)
+    * [Binding Observables](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#binding-observables)
+    * [ControlProperty and Driver](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#controlproperty-and-driver) 
+    * [Disposing with RxCocoa](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#disposing-with-rxcocoa) 
   * [Error Handling](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#error-handling)
   * [MVVM with RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#mvvm-in-rxswift)
 
