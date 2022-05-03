@@ -156,6 +156,7 @@
 
 ## Code snippets
 * [UIView - layout extension](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Code%20Snippets/uiview_layout_extension.md)
+* [Basic Generic url request with RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Code%20Snippets/RxSwift-url-session-snippet.md)
 
 ## Other
 
