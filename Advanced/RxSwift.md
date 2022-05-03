@@ -822,12 +822,25 @@ source.reduce(0, accumulator: { summary, newValue in
 
 ## Scan 
 
-**EN:** scan
+**EN:** scan works similar to reduce but with small difference, that it's adding each element one by one and return value immediately.
 
-**PL:** scan
+**PL:** scan działa podobnie jak reduce, ale z małą różnicą. Mianowicie taką, że wykonuje działanie na każdym elemencie jeden po drugim i zwraca ich nową wartość.
 
 ```swift
 
+let source = Observable.of(1,2,3,5,6)
+
+source.scan(0, accumulator: +)
+  .subscribe(onNext: {
+    print($0)
+}).disposed(by: disposeBag)
+
+// Result = result + value from source
+// 1 = 0 + 1 // 0 is a seed value
+// 3 = 1 + 2
+// 6 = 3 + 3 
+// 11 = 6 + 5 (last result was 6 and then another value in sequence is 5 - we dont have 4 in it)
+// 17 = 11 + 6
 ```
 
 # RxCocoa
