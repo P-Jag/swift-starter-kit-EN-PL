@@ -859,7 +859,6 @@ source.scan(0, accumulator: +)
 Producer --- bindTo ---> Reciever 
 
 Producer <--- xxx --- Reciever // do not exist - one way connection.
-
 ```
 ## Driver
 
@@ -868,7 +867,18 @@ Producer <--- xxx --- Reciever // do not exist - one way connection.
 **PL:** Główne zalety używania drivera to: Pracuje na jednostkach, które z automatu są obserwowane i subskrybowane na MainSchedulerze, więc nie trzeba nic dodawać (.observeOn(MainScheduler.instance). Można używać go zarówno do bindingu oraz dodawać do interfejsu. 
 
 ```swift 
-
+ let weather = URLRequest.load(resource: resource)
+            .observe(on: MainScheduler.instance)
+            .asDriver(onErrorJustReturn: WeatherResult.empty)
+        
+        // Observable binding with driver 
+        weather.map { "\($0.main.temp)" }
+        .drive(self.temperatureLabel.rx.text) // .bind(to: self.temperatureLabel.rx.text)
+        .disposed(by: disposeBag)
+        
+        weather.map { "\($0.main.humidity)" }
+        .drive(self.humidityLabel.rx.text) // .bind(to: sefl.humidityLabel.rx.text)
+        .disposed(by: disposeBag)
 ```
 
 ## Disposing with RxCocoa
