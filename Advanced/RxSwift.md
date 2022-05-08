@@ -883,9 +883,21 @@ Producer <--- xxx --- Reciever // do not exist - one way connection.
 
 ## Disposing with RxCocoa
 
-**EN:**
+**EN:** When to use weak, unknown or nothing?
 
-**PL:**
+nothing: in singleton vc when it's not going to be released. 
+
+unknown (self cannot be nil): inside all vc which are going to be released after closure task is complete
+
+weak (self can be nil): all other cases
+
+**PL:** Kiedy użyć weak, unknown albo żadnego z nich?
+
+nothing: w singletonach, które nigdy nie zostaną 'zamknięte'.
+
+unknow (self nie może być nilem): kiedy 'zamknięcie' danego vc jest efektem działania domknięcia (closure)
+
+weak (self może być nilem): wszystkie inne przypadki
 
 # Error Handling
 
