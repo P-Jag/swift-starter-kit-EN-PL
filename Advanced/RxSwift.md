@@ -849,17 +849,27 @@ source.scan(0, accumulator: +)
 
 **PL:** RxCocoa zawiera wrappery dla kontrolek UI oraz niektórych klas w SDK. Dzięki nim łatwej jest dodać i utzymać reaktywność aplikacji. Jeśli w bibliorece RxCocoa nie znajdziemy pożądanego wrappera możemy je stworzyć sami. 
 
-## Binding Observables
+## Binding
 
-**EN:**
+**EN:** Producer provides data to Reciever (interface) but Reciever cannot have bind connection with producer like in other languages.
 
-**PL:**
+**PL:** Producer przez binding dostarcza dane do inferfejsu (Reciever). Jednakże interfejs nie ma połączenia z Producerem. Jest to połączenie jednostronne. 
 
-## ControlProperty and Driver
+```
+Producer --- bindTo ---> Reciever 
 
-**EN:**
+Producer <--- xxx --- Reciever // do not exist - one way connection.
 
-**PL:**
+```
+## Driver
+
+**EN:** Main features of driver is: Driver works on units which can't error out, units are observed on main scheduler so I don't have to type .observeOn(MainScheduler.instance). Just use driver instead. You can also share side effects - bind or put into interface. 
+
+**PL:** Główne zalety używania drivera to: Pracuje na jednostkach, które z automatu są obserwowane i subskrybowane na MainSchedulerze, więc nie trzeba nic dodawać (.observeOn(MainScheduler.instance). Można używać go zarówno do bindingu oraz dodawać do interfejsu. 
+
+```swift 
+
+```
 
 ## Disposing with RxCocoa
 
