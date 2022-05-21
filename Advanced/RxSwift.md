@@ -930,15 +930,23 @@ Basic generic load func with error throw
 
 ## Catch Error
 
+Basic error catch
+
 ```swift
+
+ let weather = URLRequest.load(resource: resource)
+            .observe(on: MainScheduler.instance)
+            .catch { error in
+                print(error.localizedDescription)
+                return Observable.just(WeatherResult.empty)
+            }
+            .asDriver(onErrorJustReturn: WeatherResult.empty)
 
 ```
 
 ## Retry 
 
-**EN:**
-
-**PL:**
+Basic retry 
 
 ```swift
 
