@@ -946,9 +946,16 @@ Basic error catch
 
 ## Retry 
 
-Basic retry 
-
 ```swift
+
+ let weather = URLRequest.load(resource: resource)
+            .observe(on: MainScheduler.instance)
+            .retry(3) // just add retry and num of times  - retry 3 times in other case throw error. 
+            .catch { error in
+                print(error.localizedDescription)
+                return Observable.just(WeatherResult.empty)
+            }
+            .asDriver(onErrorJustReturn: WeatherResult.empty)
 
 ```
 
