@@ -958,5 +958,3 @@ Basic error catch
             .asDriver(onErrorJustReturn: WeatherResult.empty)
 
 ```
-
-# MVVM in RxSwift
