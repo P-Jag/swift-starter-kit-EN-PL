@@ -119,7 +119,6 @@
     * [ControlProperty and Driver](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#controlproperty-and-driver) 
     * [Disposing with RxCocoa](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#disposing-with-rxcocoa) 
   * [Error Handling](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#error-handling)
-  * [MVVM with RxSwift](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/RxSwift.md#mvvm-in-rxswift)
 
 * [Combine](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/Combine.md)
   * [Publishers](https://github.com/P-Jag/swift-starter-kit-EN-PL/blob/main/Advanced/Combine.md#publishers)
